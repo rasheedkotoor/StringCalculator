@@ -11,6 +11,5 @@ class TestStringCalculator:
 
     def test_empty_string_returns_zero(self):
         """Test that empty string returns 0."""
-        # RED - this test will fail.
         result = self.calculator.add("")
         assert result == 0
