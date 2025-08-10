@@ -81,12 +81,12 @@ pytest tests/test_string_calculator.py::TestStringCalculator::test_empty_string_
 
 ```
 StringCalculator/
-├── StringCalculator/
-│   ├── __init__.py
-│   └── string_calculator.py
+├── __init__.py
+├── .venv/
 ├── tests/
 │   ├── __init__.py
 │   └── test_string_calculator.py
+├── string_calculator.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
