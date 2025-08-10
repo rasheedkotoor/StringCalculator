@@ -22,3 +22,7 @@ class TestStringCalculator:
     def test_two_numbers_returns_sum(self):
         result = self.calculator.add("1,2")
         assert result == 3
+
+    def test_many_numbers_returns_sum(self):
+        result = self.calculator.add("1,2,3,4,5")
+        assert result == 15
