@@ -11,6 +11,6 @@ class StringCalculator:
         """
         if numbers_string == "":
             return 0
+        numbers_string = numbers_string.replace("\n", ",")
         numbers = numbers_string.split(",")
         return sum(int(x) for x in numbers if x.strip().isdigit())
-
