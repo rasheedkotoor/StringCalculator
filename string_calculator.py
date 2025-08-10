@@ -12,4 +12,5 @@ class StringCalculator:
         if numbers_string == "":
             return 0
         numbers = numbers_string.split(",")
-        return sum(int(x) for x in numbers)
+        return sum(int(x) for x in numbers if x.strip().isdigit())
+
