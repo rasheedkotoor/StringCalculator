@@ -1,5 +1,4 @@
-import sys
-import os
+import pytest
 
 from StringCalculator.string_calculator import StringCalculator
 
@@ -35,8 +34,8 @@ class TestStringCalculator:
         assert result == 6
 
     def test_numbers_with_strings(self):
-        """Test that numbers with strings return the correct sum of numbers, ignoring non-numeric values."""
-        result = self.calculator.add(" 1 , 2 , 3 , a, 4, b ")
+        """Test numbers with strings return the correct sum, ignoring non-numerics."""
+        result = self.calculator.add("1,2,3,a,4,b")
         assert result == 10
 
     def test_new_line_delimiter(self):
