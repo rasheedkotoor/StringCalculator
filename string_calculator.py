@@ -11,3 +11,5 @@ class StringCalculator:
         """
         if numbers_string == "":
             return 0
+        if "," not in numbers_string:
+            return int(numbers_string)

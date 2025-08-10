@@ -17,5 +17,4 @@ class TestStringCalculator:
     def test_single_number_returns_itself(self):
         """Test that a single number returns itself."""
         result = self.calculator.add("5")
-        # RED: This test will fail.
         assert result == 5
