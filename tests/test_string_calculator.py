@@ -33,3 +33,8 @@ class TestStringCalculator:
         """Test that numbers with spaces return the correct sum."""
         result = self.calculator.add(" 1 , 2 , 3 ")
         assert result == 6
+
+    def test_numbers_with_strings_returns_sum_of_numbers(self):
+        """Test that numbers with strings return the correct sum of numbers along with ignoring non-numeric values."""
+        result = self.calculator.add(" 1 , 2 , 3 , a, 4, b ")
+        assert result == 10
