@@ -38,3 +38,9 @@ class TestStringCalculator:
         """Test that numbers with strings return the correct sum of numbers along with ignoring non-numeric values."""
         result = self.calculator.add(" 1 , 2 , 3 , a, 4, b ")
         assert result == 10
+
+
+    def test_new_line_delimiter(self):
+        """Test that new line as a delimiter works correctly."""
+        result = self.calculator.add("1\n2,3")
+        assert result == 6
