@@ -34,13 +34,17 @@ class TestStringCalculator:
         result = self.calculator.add(" 1 , 2 , 3 ")
         assert result == 6
 
-    def test_numbers_with_strings_returns_sum_of_numbers(self):
-        """Test that numbers with strings return the correct sum of numbers along with ignoring non-numeric values."""
+    def test_numbers_with_strings(self):
+        """Test that numbers with strings return the correct sum of numbers, ignoring non-numeric values."""
         result = self.calculator.add(" 1 , 2 , 3 , a, 4, b ")
         assert result == 10
-
 
     def test_new_line_delimiter(self):
         """Test that new line as a delimiter works correctly."""
         result = self.calculator.add("1\n2,3")
         assert result == 6
+
+    def test_floating_point_numbers(self):
+        """Test that floating point numbers are handled correctly."""
+        result = self.calculator.add("1,2.5,3")
+        assert result == 6.5
