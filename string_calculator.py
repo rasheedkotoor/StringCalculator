@@ -8,7 +8,7 @@ class StringCalculator:
             return True
         except ValueError:
             return False
-    
+
     def add(self, numbers_string) -> int:
         """
         Add numbers from a string input.

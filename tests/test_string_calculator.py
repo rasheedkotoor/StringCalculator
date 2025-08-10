@@ -48,3 +48,8 @@ class TestStringCalculator:
         """Test that floating point numbers are handled correctly."""
         result = self.calculator.add("1,2.5,3")
         assert result == 6.5
+
+    def test_negative_numbers(self):
+        """Test that negative numbers are handled correctly."""
+        result = self.calculator.add("1,-2,3,-10")
+        assert result == -8
