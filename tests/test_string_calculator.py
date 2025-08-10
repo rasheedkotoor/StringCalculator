@@ -1,5 +1,3 @@
-import pytest
-
 from StringCalculator.string_calculator import StringCalculator
 
 
