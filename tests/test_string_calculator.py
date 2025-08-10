@@ -13,3 +13,9 @@ class TestStringCalculator:
         """Test that empty string returns 0."""
         result = self.calculator.add("")
         assert result == 0
+
+    def test_single_number_returns_itself(self):
+        """Test that a single number returns itself."""
+        result = self.calculator.add("5")
+        # RED: This test will fail.
+        assert result == 5
