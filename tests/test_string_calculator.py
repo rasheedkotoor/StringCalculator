@@ -18,3 +18,7 @@ class TestStringCalculator:
         """Test that a single number returns itself."""
         result = self.calculator.add("5")
         assert result == 5
+
+    def test_two_numbers_returns_sum(self):
+        result = self.calculator.add("1,2")
+        assert result == 3
